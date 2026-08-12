@@ -5,17 +5,19 @@ import Trivia from './pages/Trivia';
 import Quiz from './pages/Quiz';
 import Profile from './pages/Profile';
 import Auth from './pages/Auth';
-import Toaster from 'react-hot-toast';
+import {Toaster} from 'react-hot-toast';
 import QuizStart from './pages/QuizStart';
 import Leaderboard from './pages/Leaderboard';
 import LiveQuiz from './pages/LiveQuiz';
 import Code from './pages/Code';
+
 import GenerateAI from './pages/GenerateAI';
+import FAQ from './pages/FAQ'
 
 function App() {
   return (
     <Router>
-      
+      <Toaster position="top-center"/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/addQuiz' element={<AddQuiz />} />
@@ -28,6 +30,8 @@ function App() {
         <Route path='/live' element={<LiveQuiz />} />
         <Route path='/code' element={<Code /> } />
         <Route path='/generate' element={<GenerateAI />} />
+        <Route path='/code' element={<Code/> } />
+        <Route path='/FAQ' element={<FAQ />} />
       </Routes>
     </Router>
   );

@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../feature/auth/authSlice";
 import { motion } from "framer-motion";
-import { FiMenu, FiX } from "react-icons/fi"; // hamburger icons
+import { FiMenu, FiX } from "react-icons/fi";
+import { Sparkles } from "lucide-react";
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -44,6 +45,15 @@ export default function Navbar() {
         >
           Room
         </h2>
+        {user && (
+          <h2
+            className="cursor-pointer bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-xl px-3 py-1 flex items-center gap-1.5"
+            onClick={() => navigate("/generate")}
+          >
+            <Sparkles size={16} className="text-yellow-400" />
+            Generate AI
+          </h2>
+        )}
       </div>
 
       {/* User Section */}
@@ -103,6 +113,15 @@ export default function Navbar() {
           >
             Room
           </h2>
+          {user && (
+            <h2
+              className="cursor-pointer bg-gradient-to-r from-purple-500/30 to-pink-500/30 rounded-xl px-4 py-2 w-11/12 text-center flex items-center justify-center gap-1.5"
+              onClick={() => { navigate("/generate"); setMenuOpen(false); }}
+            >
+              <Sparkles size={16} className="text-yellow-400" />
+              Generate AI
+            </h2>
+          )}
 
           {user ? (
             <>

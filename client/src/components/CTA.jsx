@@ -32,7 +32,7 @@ export default function CTA() {
                 {/* Description */}
                 <div className="mb-6 sm:mb-8 text-white text-sm sm:text-base font-medium max-w-lg mx-auto sm:mx-0">
                     <p>
-                        Challenge yourself with trivia, create your own quiz, or join with a code. 
+                        Challenge yourself with Quiz, create your own quiz, or join with a code. 
                         Compete with friends, climb the leaderboard, and win daily rewards.
                     </p>
                 </div>

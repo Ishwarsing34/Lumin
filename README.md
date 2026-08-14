@@ -96,12 +96,6 @@ Quiz/
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or later)
-- [MongoDB Atlas](https://www.mongodb.com/atlas) account (or a local MongoDB instance)
-- [Gemini API Key](https://aistudio.google.com/apikey) *(optional — only for the AI feature)*
-
 ### 1. Clone the Repository
 
 ```bash
